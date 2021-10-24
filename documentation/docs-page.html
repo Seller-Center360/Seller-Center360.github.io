@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Seller-Center360</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/coderdocs-logo.svg" alt="logo"><span class="logo-text">Seller Center<span class="text-alt"> 360</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
+	                <div class="top-search-box d-none d-lg-flex">
+
+	                </div>
+	            </div><!--//docs-top-utilities-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introdução</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#section-1">Sobre o Seller-Center</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Configuração do ambiente</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Pasta seller-center-main</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">npm install</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">npm run build</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">npm run dev</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>APIs</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">AccountRouter</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">AuthRouters</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">BankRouter</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">CategoryRouters</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">ProductRouters</a></li>
+				  
+				    
+				    
+
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introdução<span class="docs-time"></span></h1>
+					    <section class="docs-intro">
+							<h5>Sobre o seller-center</h5>
+						    <p>O seller center da Ozllo é uma plataforma para que sellers do segmento de moda, beleza e lifestyle consigam vender e fazer a gestão de suas mercadorias em multiplos marketplaces. Nosso seller center é integrado via API na integradora de marketplace Hub2b, que então envia os produtos para os marketplaces. Atualmente, temos 40 sellers que utilizam da nossa plataforma para cadastro de produtos e gestão de vendas.</p>
+						</section><!--//docs-intro-->
+						
+						
+						
+					     
+				    
+						
+						
+                        <h5>Callout Examples:</h5>
+                        <div class="callout-block callout-block-info">
+                            
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-info-circle"></i>
+		                            </span><!--//icon-holder-->
+	                                Nota
+	                            </h4>
+                                <p>Essa documentação é para auxiliar os novos colaboradores a utilizar o seller-center 360.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        
+                        <div class="callout-block callout-block-warning">
+                            <div class="content">
+                                <h4 class="callout-title">
+	                                <span class="callout-icon-holder me-1">
+		                                <i class="fas fa-bullhorn"></i>
+		                            </span><!--//icon-holder-->
+	                                Atenção
+	                            </h4>
+                                <p>É importante verificar se na sua pasta main está salvo o arquivo .env, que são as variáveis de ambiente necessárias para a conexão do backend do seu projeto. Acesso exclusivo aos desenvolvedores. Entre em contato com os responsávei pelo projeto.</p>
+                            </div><!--//content-->
+                        </div><!--//callout-block-->
+                        
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Configuração do ambiente</h1>
+					    <section class="docs-intro">
+						    <p>Para que o backend funcione corretamente verifique se o seu computador tem os recrusos necessário para as conexões. Após a checagem positiva, siga os passos abaixo:</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Pasta seller-center-main</h2>
+						<p>Depois de acessar o desktop no pront de comando, certifique-se de que a pasta seller-center-main esteja salva em seu computador, você pode adquiri-la no Github ....</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">npm install</h2>
+						<p>Após abrir a pasta em seu pront de comando executar o comando: npm install. Assim, o computador vai instalar todos os aquivos da pasta baixada.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">npm run build</h2>
+						<p>Após o fim da instalação, que dependendo do compuntador pode levar até 2 minutos, executar o comando: npm run build. Server para permitir a execução de tarefas de construção e preparação necessárias para o projeto.  </p>
+					</section><!--//section-->
+
+					<section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">npm run dev</h2>
+						<p>Por último basta você executar o comando: npm run dev, que o projeto vai estar funcionando, conectado ao banco de dados e com as demais plataformas que o seller-center utiliza.</p>
+					</section><!--//section-->
+			    </article><!--//docs-article-->
+
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">APIs</h1>
+					    <section class="docs-intro">
+						    <p>Após as instalações do projeto feitas na configuração do ambiente, verifique a porta HTTP que retornou, utilizamos o endpoint https://ozllo-seller-center.herokuapp.com/. Ela é necessária para acessar os terminais de conexão. As requests feitas para essa documentação foram feitas pelo postman, mas pode ser usado outro de sua preferência.</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">AccountRouter</h2>
+						<p>Rotas da conta do usuário, para manipular os dados da conta é preciso de autorização que é o token que retorna no seu email.</p>
+						
+						
+							<h3>Criar informações pessoais para um usuário</h3>
+							<p>As informações pessoais de cada usuário dependem de 2 variações, ambas utilizam o método POST, existe a opção de CNPJ e a opção de PF-pessoa física. Nessa parte é necessário um token de auth, cada login novo gera um token diferente e ele tem um tempo de duração para a segurança do usuário. Então é importante verificar se a requisição está utilizando um token válido, caso contrário a request vai dar o erro: 401-Unauthorized. O endpoint usado: https://ozllo-seller-center.herokuapp.com/account/personalInfo.</p>
+							<p>Para criar a informação de pessoa física ele exige um parametro bulean, o CPF não pode estar editado, a sintaxe deve ficar assim:</p>
+
+							{
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6314006"</span>,<br>
+								<span class="hljs-attr">"isPF"</span>: <span class="hljs-string"></span>true,<br>
+								<span class="hljs-attr">"firstName"</span>: <span class="hljs-string">"Abreu"</span>, <br>
+								<span class="hljs-attr">"lastName"</span>: <span class="hljs-string">"Silva"</span>,<br>
+								<span class="hljs-attr">"cpf"</span>: <span class="hljs-string">"04489980094"</span>,<br>
+								<span class="hljs-attr">"birthday"</span>: <span class="hljs-string">"26-09-1985"</span>,<br>
+							  }<br>
+							  <br>
+							  <p>Em caso de sucesso espera-se o seguinde retorno:</p>
+							  {
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6314006"</span>,<br>
+								<span class="hljs-attr">"firstName"</span>: <span class="hljs-string">"Abreu"</span>, <br>
+								<span class="hljs-attr">"lastName"</span>: <span class="hljs-string">"Silva"</span>,<br>
+								<span class="hljs-attr">"cpf"</span>: <span class="hljs-string">"04489980094"</span>,<br>
+								<span class="hljs-attr">"birthday"</span>: <span class="hljs-string">"26-09-1985"</span>,<br>
+							  }<br>
+							  <br>
+
+							  <p>Para criar um PJ os parâmetros necessário são um pouco diferente, esse formato é obrigatório a requisição vai dar erro se não estiver assim, não esqueça de verificar se o token está atualizado e por formato a inscriçãoEstadual e a inscriçãoMunicipal vem como "Isento". Diferente do CPF o CNPJ deve estar no formato editado:</p>
+
+							  {
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6385206"</span>,<br>
+								<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Abreu"</span>, <br>
+								<span class="hljs-attr">"cnpj"</span>: <span class="hljs-string">"05.858.901/0001-32"</span>,<br>
+								<span class="hljs-attr">"isPJ"</span>: <span class="hljs-string">true</span>,<br>
+								<span class="hljs-attr">"razaoSocial"</span>: <span class="hljs-string">"Manutenção de computador"</span>,<br>
+								<span class="hljs-attr">"inscricaoEstadual"</span>: <span class="hljs-string">"Isento"</span>,<br>
+								<span class="hljs-attr">"inscricaoMunicipal"</span>: <span class="hljs-string">"Isento"</span><br>
+							  }<br>
+							  <br>
+							  <p>Caso todos os parâmetros estejam corretos o retorno é um 200 sucess e a mensagem abaixo: </p>
+
+							  {
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6385206"</span>,<br>
+								<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Abreu"</span>,<br>
+								<span class="hljs-attr">"cnpj"</span>: <span class="hljs-string">"05.858.901/0001-32"</span>,<br>
+								<span class="hljs-attr">"razaoSocial"</span>: <span class="hljs-string">"Manutenção de computador"</span>,<br>
+								<span class="hljs-attr">"inscricaoEstadual"</span>: <span class="hljs-string">"Isento"</span>,<br>
+								<span class="hljs-attr">"inscricaoMunicipal"</span>: <span class="hljs-string">"Isento"</span><br>
+							  }<br>
+							  <br>
+
+							<h3>Ciar um endereço de usuário</h3>
+							<p>Para criar um endereço para o usuário use o método POST, o endpoint: https://ozllo-seller-center.herokuapp.com/account/address. O "complemento" é o único parâmetro opcional os demais são obrigatório. </p>
+
+							{
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6314006"</span>,<br>
+								<span class="hljs-attr">"address"</span>: <span class="hljs-string">"Rua São João"</span>, <br>
+								<span class="hljs-attr">"city"</span>: <span class="hljs-string">"Santo Antonio"</span>,<br>
+								<span class="hljs-attr">"complement"</span>: <span class="hljs-string">""</span>,<br>
+								<span class="hljs-attr">"district"</span>: <span class="hljs-string">"Parque das Fontes"</span>,<br>
+								<span class="hljs-attr">"number"</span>: <span class="hljs-string">"660"</span>,<br>
+							  }<br>
+							  <br>
+						
+							  <p>Caso todos os parâmetros estejam corretos o retorno é um 200 sucess e a mensagem abaixo: </p>
+
+							  {
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6314006"</span>,<br>
+								<span class="hljs-attr">"address"</span>: <span class="hljs-string">"Rua São João"</span>, <br>
+								<span class="hljs-attr">"city"</span>: <span class="hljs-string">"Santo Antonio"</span>,<br>
+								<span class="hljs-attr">"district"</span>: <span class="hljs-string">"Parque das Fontes"</span>,<br>
+								<span class="hljs-attr">"number"</span>: <span class="hljs-string">"660"</span><br>
+							  }<br>
+							  <br>
+
+							<h3>Criar informações da loja para um usuário</h3>
+							<p>Para criar informações da loja do usuário deve ser usado o método POST e o endpoin: https://ozllo-seller-center.herokuapp.com/account/shopInfo. Essa request é necessário colocar no Headers o Authorization - o token de login. Caso o Headersnão esteja com o token atualizado vai dar o erro 401 "Unauthorized". Após atualizar o toke, no body->raw->JSON é preciso inserir um parâmetro com o nome da loja:</p>
+							{<br>
+								<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Roupas Joana"</span><br>
+							}<br>
+
+							<p>Ele vai retornar um _id, um id de usuário e o nome da loja:</p>
+							{ <br>
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6314006"</span>, <br>
+								<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"985ad4a7c55f8f8w6314952"</span>, <br>
+								<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Ozllo"</span>, <br>
+							  }<br>
+
+							<h3>Criar o banco de informaões para o usuário</h3>
+							<p>Para criar o banco de informações para o usuário dever ser usado o método POST e o endpoint vai ficar assim: https://ozllo-seller-center.herokuapp.com/accountbankInfo. Para essa request também é necessário acrescentar o Headers com o Authorization e o token de login usado. É preciso ter o parâmetro "pix" mesmo que ele seja opcional, o "account" deve ter 9 dígitos e "agency" deve ser 5 dígitos podendo ficar formatado "5632-9" caso contrário vai dar o erro 401 "Unauthorized".A sintaxe a ser executada no body->raw->JSON:</p>
+							
+							{<br>
+								<span class="hljs-attr">"bank"</span>: <span class="hljs-string">"004"</span>,<br>
+								<span class="hljs-attr">"account"</span>: <span class="hljs-string">"21546541-6"</span>,<br>
+								<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Banco do Nordeste"</span>,<br>
+								<span class="hljs-attr">"agency"</span>: <span class="hljs-string">"3652-9"</span>,<br>
+								<span class="hljs-attr">"pix"</span>: <span class="hljs-string">""</span><br>
+							}<br>
+
+							<br>
+							<p>O retorno vai ser:</p>
+							{<br>
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"dd87ad6a4d6a4d6ad76as"</span>,<br>
+								<span class="hljs-attr">"bank"</span>: <span class="hljs-string">"004"</span>,<br>
+								<span class="hljs-attr">"account"</span>: <span class="hljs-string">"21546541-6"</span>,<br>
+								<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Banco do Nordeste"</span>,<br>
+								<span class="hljs-attr">"agency"</span>: <span class="hljs-string">"3652-9"</span><br>
+							}<br>
+							<br>
+							<h3>Criar um contato para um usuário</h3>
+							<p>Para criar um contato para um usuário deve ser usado o método POST e o endpoin vai ficar assim: https://ozllo-seller-center.herokuapp.com/account/contact. Essa requisição também é necessário acrescentar o Headers com o Authorization e o token de login usado. A rota de contato exige um número de telefone, que deve ter 10 dígitos, e tem como opcional uma URL. A sintaxe fica assim:</p>
+							{<br>
+								<span class="hljs-attr">"phone"</span>: <span class="hljs-string">"1164523897"</span>,<br>
+								<span class="hljs-attr">"url"</span>: <span class="hljs-string">""</span><br>
+							}<br>
+
+							<p>O retorno vai ser:</p>
+							{<br>
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"dd87ad6a4d6a4d6ad76as"</span>,<br>
+								<span class="hljs-attr">"userId"</span>: <span class="hljs-string">"a4d6a4d6dad4a6d9d7daee"</span>,<br>
+								<span class="hljs-attr">"phone"</span>: <span class="hljs-string">"21546541-6"</span>,<br>
+								<span class="hljs-attr">"url"</span>: <span class="hljs-string">"Banco do Nordeste"</span><br>
+							}<br>
+
+							<h3>Decodificar o token do usuário</h3>
+							<p>Para decodificar o token do usuário basta enviar um metódo GET para o endpoint: https://ozllo-seller-center.herokuapp.com/account/decode.</p>
+							<p>O retorno vai ser:</p>
+							{<br>
+								<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"654fhdfs46t89ert4r56gs6df7a9"</span>,<br>
+								<span class="hljs-attr">"email"</span>: <span class="hljs-string">"ozllo123@gmail.com"</span>,<br>
+								<span class="hljs-attr">"isActive"</span>: <span class="hljs-string">true</span>,<br>
+								<span class="hljs-attr">"role"</span>: <span class="hljs-string">""</span><br>
+							}<br>
+							
+							<h3>Detalhes da conta do usuário</h3>
+							<p>Para ver os detalhes da conta do usuário é preciso enviar um método GET para o endpoint: https://ozllo-seller-center.herokuapp.com/account/details. Ele retorna todos os detalhes da conta do usuário.</p>
+							
+
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">AuthRouters</h2>
+						<p>Essas são as rotas de autorização. As rotas de autorização precisam ter sempre o /auth no endpoint, ou elas vão retornar o erro 404 Unauthorzed.</p>
+
+				    
+						<h3>Criar conta</h3>
+						<p>Para criar uma conta utilizamos o metodo POST para enviar um novo dado com o endpoint https://ozllo-seller-center.herokuapp.com/auth/creat. A senha precisa ser forte e só aceita o email, se usar qualquer outra variável vai dar erro.</p>
+						<p>O body->raw->JSON vai ficar assim:</p>
+						{
+							<span class="hljs-attr">"email"</span>: <span class="hljs-string">"ozllo123@gmail.com"</span>,<br>
+							<span class="hljs-attr">"password"</span>: <span class="hljs-string">"Ozllo903$"</span> <br>
+						  }<br>
+						  <br>
+						  
+						  <p>Ele vai retornar:</p>
+						  {
+							<span class="hljs-attr">"email"</span>: <span class="hljs-string">"ozllo123@gmail.com"</span>,<br>
+							<span class="hljs-attr">"isActive"</span>: <span class="hljs-string">"false"</span>,<br>
+							<span class="hljs-attr">"role"</span>: <span class="hljs-string">"seller"</span>,<br>
+							<span class="hljs-attr">"id"</span>: <span class="hljs-string">"985ad4a6d44f8f8w63148a"</span><br>
+						  }
+
+
+					
+						<h3>Ativar a conta </h3>
+						<p>No email que foi utilizado para criar a conta vai ser gerado um token, a ativação manda um veryfi para o email e o token recebe a autorização pelo beckend. O metódo vai ser GET, pois estamos pegando um dado do servidor e o endpoint vai ficar desse modo então: https://ozllo-seller-center.herokuapp.com/auth/activate/:token</p>
+
+					
+						<h3>Verificar se o usuário pode fazer login</h3>
+						<p>Para verificar se o usuário já foi ativado e pode fazer login, deve ser usado o metodo POST e o endpoint: https://ozllo-seller-center.herokuapp.com/auth/login</p>
+					
+
+				     
+						<h3>Fazer o login </h3>
+						<p>Para fazer o login é necessário usar um metodo POST com o endpoint https://ozllo-seller-center.herokuapp.com/auth/login. Para fazer o login só é aceito o parâmetro email, se for outro vai dar erro.</p>
+						<p>O body->raw->JSON deve ficar assim:</p>
+						{
+							<span class="hljs-attr">"login"</span>: <span class="hljs-string">"ozllo123@gmail.com"</span>,<br>
+							<span class="hljs-attr">"password"</span>: <span class="hljs-string">"Ozllo903$"</span><br>
+						  }
+					
+					
+					
+						<h3>Fazer logout</h3>
+						<p>Para fazer o logout é necessário usar o metodo PUT com o endpoint: https://ozllo-seller-center.herokuapp.com/auth/logout. Nesse não é preciso passar um body.</p>
+					
+					
+					
+							<h3>Esqueci a senha</h2>
+						<p>Para trocar a senha você precisa usar um metodo GET e o endpoint: https://ozllo-seller-center.herokuapp.com/auth/forgotPassword/:emaildousario. Não é necessário usar um body.</p>
+						<p>Ele vai retornar:</p>
+						{ <br>
+							<span class="hljs-attr">"data"</span>: <span class="hljs-string">"Email send to reset password"</span> <br>
+							
+						  }
+
+					
+						<h3>Resetar a senha</h3>
+					<p>Quando enviado o endpoint para forgotPassword, vai chegar no email de usuário cadastrado um token para renovar a senha o metodo que deve ser usado é GET e o endpoint vai ficar assim: https://ozllo-seller-center.herokuapp.com/auth/resetPassword/:token.</p>
+					<P>Ele vai ser verificado pelo backend para saber se o token é valido pois ele tem um perído de expiração, e se ele for válido vai retornar um id de usuário.</P>
+					<p>Depois dessa verificação deve ser usado um metodo POST e o endpoint https://ozllo-seller-center.herokuapp.com/auth/resetPassword. E o body->raw>JSON:</p>
+					{ <br>
+						<span class="hljs-attr">"user_id"</span>: <span class="hljs-string">"985ad4a6d44f8f8w6314006"</span>, <br>
+						<span class="hljs-attr">"new_password"</span>: <span class="hljs-string">"Ozllo006@"</span> <br>
+					  }<br>
+					  <br>
+					  <p>Ele vai retornar:</p>
+
+					  <span class="hljs-attr">"auth"</span>: <span class="hljs-string">"true"</span>, <br>
+					  <span class="hljs-attr">"token"</span>: <span class="hljs-string">"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eygiataguep7Il9pZCI6I
+						  <br>jYxNzIwZjE3ZTU1Mjc0MDAxNjVlNTA5MiIsImVtYWlsIjoibmF0YWxpYS5mZXJuYW5<br>
+						  kZXMwN291emFAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkTnVKc1R1cUFsQXdCM<br>
+						  DIvY25rKAKEUEIEOWQPDSW5QMEljTE9ETi9RUTgucWxSSGx1YXdFVXEiLCJpc0FjdGl2ZS<br>
+						  I6dHJ1ZSwicm9sZSI6InNlbGxlciJ9LCJpYXQiOjE2MzQ4NjY5NzAsImV4cCI6MTYzNDg3<br>
+						  MDU3MH0.zMcyUYCmd8WOFbIjkyTb97_pZ2E_dXopZR7JIzK2iahduiha"</span> <br>
+
+					
+						<h3>Verificar se o token ainda é válido</h3>
+					<p>Para verificar se o token ainda está válido deve ser enviado um método GET e o endpoint: https://ozllo-seller-center.herokuapp.com/auth/token/:token</p>
+					</section>
+
+					<section class="docs-section" id="item-4-2">
+						<h2 class="section-heading">BankRouter</h2>
+						<p>Para ver todos os bancos que estão disponíveis para serem utilizados, deve se enviado um método GET para o endpoint https://ozllo-seller-center.herokuapp.com/bank/all. </p>
+						<p>Ele retona todos os bancos com o nome e o número da agência:</p>
+						{ <br>
+							<span class="hljs-attr">"value"</span>: <span class="hljs-string">"001"</span>, <br>
+							<span class="hljs-attr">"name"</span>: <span class="hljs-string">"Banco do Brasil"</span><br>
+						  }<br>
+						</section>
+
+					<section class="docs-section" id="item-4-3">
+						<h2 class="section-heading">CategoryRouters</h2>
+						<p>Essas são as rotas de categorias.</p>
+
+						<h3>Lista de categorias</h3>
+					<p>Para vizualizar a lista inteira de categorias é preciso enviar um método GET para o endpoint: https://ozllo-seller-center.herokuapp.com/category/all. Nessa requisição é necessário usar o _id do produto e o Authorization.</p>
+					<P>Ele vai retornar o código da categoria e a classe a qual ele pertence:</P>
+					{ <br>
+						<span class="hljs-attr">"code"</span>: <span class="hljs-string">"281"</span>, <br>
+						<span class="hljs-attr">"value"</span>: <span class="hljs-string">"Acessórios"</span> <br>
+					  }<br>
+					  <br>
+
+					  <h3>Lista de subcategorias</h3>
+					<p>Para vizualizar a lista inteira de subcategorias é preciso enviar um método GET para o endpoint: https://ozllo-seller-center.herokuapp.com/category/:category_code/subcategories. Nessa requisição é necessário usar o _id do produto e o Authorization.</p>
+					<P>Ele vai retornar o código da categoria, o código e a classe a qual ele pertence:</P>
+					{ <br>
+						<span class="hljs-attr">"categoryCode"</span>: <span class="hljs-string">"281"</span>, <br>
+						<span class="hljs-attr">"code"</span>: <span class="hljs-string">"406"</span>, <br>
+						<span class="hljs-attr">"value"</span>: <span class="hljs-string">"Anabelas"</span>, <br>
+					  }<br>
+					  <br>
+
+					  <h3>Lista de atributos de uma categorias</h3>
+					<p>Para vizualizar a lista inteira de categorias é preciso enviar um método GET para o endpoint: https://ozllo-seller-center.herokuapp.com/category/:category_code/attributes. Nessa requisição é necessário usar o _id do produto e o Authorization.</p>
+					<P>Ele vai retornar um objeto com o código da categoria e os atributos como a cor e o tamanho: </P>
+					{ <br>
+						<span class="hljs-attr">"categoryCode"</span>: <span class="hljs-string">"281"</span>, <br>
+						<span class="hljs-attr">"attributes"</span>: <span class="hljs-string">[ <br>
+							{<br>
+							<span class="hljs-attr">"name"</span>: <span class="hljs-string">"size"</span>, <br>
+							<span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>, <br>
+							<span class="hljs-attr">"values"</span>: <span class="hljs-string">[ <br>
+								"2",<br>
+								"4",<br>
+								"6",<br>
+								"8"</span>
+						</span> <br>
+						
+					 ] }<br>
+					{ <br>
+						<span class="hljs-attr">"categoryCode"</span>: <span class="hljs-string">"281"</span>, <br>
+						<span class="hljs-attr">"attributes"</span>: <span class="hljs-string">[ <br>
+							{<br>
+							<span class="hljs-attr">"name"</span>: <span class="hljs-string">"color"</span>, <br>
+							<span class="hljs-attr">"type"</span>: <span class="hljs-string">"string"</span>, <br>
+							<span class="hljs-attr">"values"</span>: <span class="hljs-string">[ <br>
+								"Azul",<br>
+								"Branco",<br>
+								"Caramelo",<br>
+								"Dourado"</span>
+						</span> <br>
+						
+					 ] }<br>
+					}<br>
+
+					</section>
+					
+					
+					<section class="docs-section" id="item-5-3">
+						<h2 class="section-heading">ProductRouters</h2>
+					<p>Abaixo vão as resquests necessárias para as rotas do produto.</p>
+						<br>
+						<h3>Enviando imagem para S3 e retornando a localização do arquivo</h3>
+					<p>Para enviar a imagem para a S3 e ela retornar a localização do arquivo deve se usar o metodo POST  e o endpoint: https://ozllo-seller-center.herokuapp.com/product/upload. É enviado um form-data com a localização do arquivo (images), o nome da imagem e uma descrição.Nessa requisição é necessário usar o _id do produto e o Authorization.</p>
+					<p>Ela vai retornar uma mensagem de "Successfully..." e a URL de onde a imagem está:</p>
+					{ <br>
+						<span class="hljs-attr">"message"</span>: <span class="hljs-string">"Successfully upload 1 files!"</span>, <br>
+						<span class="hljs-attr">"urls"</span>:  <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg"]</span><br>
+					  }<br>
+					<br>
+						<h3>Criar um novo produto vinculado a loja</h3>
+					<p>Para criar um novo prouto vinculado a uma loja é preciso enviar um método POST e o endpoint: https://ozllo-seller-center.herokuapp.com/product. Os parâmetros para criar um novo produto são:</p>
+					{ <br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Rosa"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">0</span><br>
+						
+						}]<br>
+					  }<br>
+					<br>
+					<p>O atributo "description" precisa ter no mínimo 10 caracteres; o atributo "bolsa" precisa ter no mínimo 4 caracteres; É necessário ter dois links de foto para ser enviado. O retorno da requisição é:</p>
+					{ <br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Rosa"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">0</span>,<br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span><br>
+						}]<br>
+					  }<br>
+					<br>
+
+
+						<h3>Detalhes do produto</h3>
+					<p>Para ver os detalhes de um produto deve ser enviado um método GET e um endpoint com o id do produto: https://ozllo-seller-center.herokuapp.com/product/:product_id. Nessa requisição é necessário usar o shop_id do produto e o Authorization no Headers.O body->raw->JSON vai ficar assim:</p>
+					<p>O retorno vai ser:</p>
+					{ <br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Rosa"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">0</span>,<br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span><br>
+						}]<br>
+					  }<br>
+					<br>
+						<h3>Atualização de um produto</h3>
+					<p>Para atualiazar um produto deve ser enviado um método PATCH e o endpoint: https://ozllo-seller-center.herokuapp.com/product/:product_id. Nessa requisição é necessário usar o shop_id do produto e o Authorization no Headers. O body->raw->JSON vai ficar assim:</p>
+
+					{ <br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+					  }<br>
+
+					  <p>O retorno vai ser:</p>
+					  { <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span>,<br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Rosa"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">0</span><br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span><br>
+						}]<br>
+					  }
+					<br>
+					<h3>Criar variação de produto</h3>
+					<p>Para criar a variação do produto deve ser enviado o método POST e o endpoint com o id do produto, o endpoint vai ficar assim: https://ozllo-seller-center.herokuapp.com/product/:product_id/variation. Nessa requisição é necessário usar o shop_id do produto e o Authorization no Headers. O body->raw->JSON:</p>
+
+					{ <br>
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Vermelho"</span>, <br>
+						<span class="hljs-attr">"stok"</span>: <span class="hljs-string">"9"</span>
+					  }<br>
+					  <br>
+					<p>No retorno vai ter a variação do produto:</p>
+
+					{ <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span>,<br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Vermelho"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">9</span><br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span> <br>
+						}]<br>
+					  }
+					<br>
+					<h3>Ver a variação do produto</h3>
+					<p>Para ver a variação do produto deve ser enviado o método GET para endpoint, com o id do prduto e o id da variação: https://ozllo-seller-center.herokuapp.com/product/:product_id/variation/:variation_id.</p>
+					<p>O retorno vai ser:</p>
+
+					{ <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span>,<br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+							<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+							<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+							<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Vermelho"</span>, <br>
+							<span class="hljs-attr">"stock"</span>: <span class="hljs-string">9</span><br>
+							<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span><br>
+						}]<br>
+					  }
+					<br>
+						<h3>Atulizar variação do produto</h3>
+					<p>Para atualiazar uma variação no produto deve ser enviado o método PATCH para endpoint e nele vai o id do produto e o id da atualização, ele deve ficar assim: https://ozllo-seller-center.herokuapp.com/product/:product_id/variation/:variation_id.</p>
+
+					{ <br>
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Vermelho"</span>, <br>
+						<span class="hljs-attr">"stok"</span>: <span class="hljs-string">"9"</span>
+					  }<br>
+					  <br>
+					<p>No retorno vai ter a variação do produto:</p>
+
+					{ <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span>,<br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Vermelho"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">9</span><br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span> <br>
+						}]<br>
+					  }
+					<br>
+						<h3>Excluir variação do produto</h3>
+					<p>Para excluir uma variação do produto deve ser enviado o método DELETE para endpoin com o id da variação que deseja excluir, o endpoin fica assim: https://ozllo-seller-center.herokuapp.com/product/:product_id/variation/:variation_id.Nessa requisição é necessário usar o shop_id do produto e o Authorization no Headers.</p>
+					<p>Após ser deletado ele retorna apenas: true.</p>
+					<br>
+						<h3>Retornar todos os produtos de uma loja</h3>
+					<p>Para ver todos os produtos de uma loja deve ser enviado o método GET para endpoin: https://ozllo-seller-center.herokuapp.com/products. Nessa requisição é necessário usar o shop_id do produto e o Authorization no Headers.</p>
+					<p>Ele vai retornar todos os produtos da loja, o id deles e as variações:</p>
+					{ <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span>,<br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Rosa"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">0</span><br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span><br>
+						}]<br>
+					  } <br>
+					  { <br>
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876c"</span>,<br>
+						<span class="hljs-attr">"shop_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876bd"</span>, <br>
+						<span class="hljs-attr">"images"</span>: <span class="hljs-string">["https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa2.jpg", "https://ozllo-seller-center-photos.s3.amazonaws.com/1635026577546_9541a8dac9af85ba6eb7ffbd_bolsa1.jpg"]</span>,<br>
+						<span class="hljs-attr">"category"</span>: <span class="hljs-string">281</span>, <br>
+						<span class="hljs-attr">"subcategory"</span>: <span class="hljs-string">402</span>, <br>
+						<span class="hljs-attr">"nationality"</span>: <span class="hljs-string">1</span>, <br>
+						<span class="hljs-attr">"name"</span>: <span class="hljs-string">"bolsa"</span>, <br>
+						<span class="hljs-attr">"description"</span>: <span class="hljs-string">"bolsa rosa para mulheres"</span>, <br>
+						<span class="hljs-attr">"brand"</span>: <span class="hljs-string">"gucci"</span>, <br>
+						<span class="hljs-attr">"more_info"</span>: <span class="hljs-string">null</span>, <br>
+						<span class="hljs-attr">"ean"</span>: <span class="hljs-string">""</span>, <br>
+						<span class="hljs-attr">"sku"</span>: <span class="hljs-string">"959765"</span>, <br>
+						<span class="hljs-attr">"gender"</span>: <span class="hljs-string">"F"</span>, <br>
+						<span class="hljs-attr">"heigth"</span>: <span class="hljs-string">15</span>, <br>
+						<span class="hljs-attr">"width"</span>: <span class="hljs-string">20</span>, <br>
+						<span class="hljs-attr">"length"</span>: <span class="hljs-string">30</span>, <br>
+						<span class="hljs-attr">"weith"</span>: <span class="hljs-string">10</span>, <br>
+						<span class="hljs-attr">"price"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"price_discounted"</span>: <span class="hljs-string">50</span>, <br>
+						<span class="hljs-attr">"is_active"</span>: <span class="hljs-string">true</span>, <br>
+						<span class="hljs-attr">"variations"</span>: [ <br>{<br> 
+						<span class="hljs-attr">"_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span>, <br>
+						<span class="hljs-attr">"size"</span>: <span class="hljs-string">"U"</span>, <br>
+						<span class="hljs-attr">"color"</span>: <span class="hljs-string">"Vermelho"</span>, <br>
+						<span class="hljs-attr">"stock"</span>: <span class="hljs-string">9</span><br>
+						<span class="hljs-attr">"product_id"</span>: <span class="hljs-string">"676d67f87fg7g7we9r64j876b"</span> <br>
+						}]<br>
+					  }
+					</section>
+			    </article><!--//docs-article-->
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Copyright Sellect ©2020 Todos Direitos Reservados | Criado por Natália Fernandes</small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
